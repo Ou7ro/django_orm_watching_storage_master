@@ -50,5 +50,5 @@ def format_duration(delta):
 def is_visit_long(visit):
     one_hour = 1
     delta = get_duration(visit)
-    hour = datetime.timedelta(hours=one_hour).total_seconds()
-    return delta > hour
+    seconds_in_hour = datetime.timedelta(hours=one_hour).total_seconds()
+    return delta > seconds_in_hour

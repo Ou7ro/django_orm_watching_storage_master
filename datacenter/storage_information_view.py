@@ -4,9 +4,9 @@ from datacenter.models import get_duration, format_duration
 
 
 def storage_information_view(request):
-    visits_not_leaved = Visit.objects.filter(leaved_at__isnull=True)
+    not_leaved_visits = Visit.objects.filter(leaved_at__isnull=True)
     non_closed_visits = []
-    for visit in visits_not_leaved:
+    for visit in not_leaved_visits:
         owner_name = visit.passcard.owner_name
         entered_time = visit.entered_at
         duration = get_duration(visit)
