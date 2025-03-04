@@ -10,7 +10,10 @@
 
 ## Зависимости
 
-- Python3 должен быть уже установлен
+- Python3.10 должен быть уже установлен. 
+
+[С другими версиями Python, Django3.2.25 не совместим](https://docs.djangoproject.com/en/4.0/faq/install/#what-python-version-can-i-use-with-django)
+
 - Затем используйте `pip` для установки зависимостей:
 
 ```pip install -r requirements.txt```
